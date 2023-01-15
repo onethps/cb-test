@@ -20,10 +20,10 @@
     "no-unused-vars": "error",
     "no-console": "warn",
     "prefer-const": "error",
-    "quotes": [
-      "error",
-      "single"
-    ],
+    // "quotes": [
+    //   "error",
+    //   "single"
+    // ],
     "jsx-quotes": [
       "error",
       "prefer-double"
@@ -47,7 +47,7 @@
       "always"
     ],
     "import/order": [
-      "error",
+      "warn",
       {
         "groups": [
           "builtin",

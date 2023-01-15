@@ -9,7 +9,7 @@ const initialState = {
 } as IPostReducerState;
 
 const {reducer, actions} = createSlice({
-  name: 'post',
+  name: 'postSlice',
   initialState,
   reducers: {},
 });

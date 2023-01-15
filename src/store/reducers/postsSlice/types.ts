@@ -1,5 +1,5 @@
 export interface IPostsReducerState {
-    posts: IPost[] | null
+    posts: IPost[] | []
     isLoading:boolean
 }
 

@@ -1,20 +1,23 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Provider } from 'react-redux';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { Provider } from "react-redux";
 
-import { CssBaseline } from '@mui/material';
+import { CssBaseline } from "@mui/material";
 
-import reportWebVitals from './reportWebVitals';
+import reportWebVitals from "./reportWebVitals";
 
-import App from './App';
-import { store } from './store/store';
+import App from "./App";
+import { store } from "./store/store";
 
+const root = ReactDOM.createRoot(
+  document.getElementById("root") as HTMLElement,
+);
 
-ReactDOM.render(
+root.render(
   <Provider store={store}>
-    <CssBaseline/>
+    <CssBaseline />
     <App />
-  </Provider>
-  , document.getElementById('root'));
+  </Provider>,
+);
 
 reportWebVitals();

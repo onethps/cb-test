@@ -1,26 +1,42 @@
 import React from 'react';
 import { Card, CardActionArea, CardMedia, CardContent, Typography } from '@mui/material';
+import Highlighter from "react-highlight-words";
 
-export function NewsCard() {
+interface NewsCardProps {
+  title:string
+  desc:string
+  img:string
+  searchValue:string
+}
+
+
+export const NewsCard:React.FC<NewsCardProps> = ({title, desc, img, searchValue}) => {
   return (
     <Card sx={{ maxWidth: 400 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="217"
-          image="https://mui.com/static/images/cards/contemplative-reptile.jpg"
-          alt="green iguana"
+          image={img}
+          alt="card-img"
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-              Lizard
+            <Highlighter
+              searchWords={searchValue.split(" ")}
+              autoEscape={true}
+              textToHighlight={title}
+            />
           </Typography>
           <Typography variant="body2" color="text.secondary">
-              Lizards are a widespread group of squamate reptiles, with over 6,000
-              species, ranging across all continents except Antarctica
+            <Highlighter
+              searchWords={searchValue.split(" ")}
+              autoEscape={true}
+              textToHighlight={desc}
+            />
           </Typography>
         </CardContent>
       </CardActionArea>
     </Card>
   );
-}
+};
