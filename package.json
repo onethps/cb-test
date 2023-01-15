@@ -1,9 +1,8 @@
 {
-  "name": "my-app",
+  "name": "cb-test",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@mui/icons-material": "^5.11.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^14.4.3",
@@ -11,8 +10,6 @@
     "@types/node": "^18.11.18",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
-    "eslint-config-airbnb": "^19.0.4",
-    "eslint-config-airbnb-typescript": "^17.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -42,6 +39,7 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
+    "@mui/icons-material": "^5.11.0",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@mui/material": "^5.11.4",
@@ -56,12 +54,10 @@
     "eslint-config-prettier": "^8.6.0",
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-prettier": "^4.2.1",
-    "image-validator": "^1.2.1",
     "lodash": "^4.17.21",
     "prettier": "^2.8.2",
     "react-highlight-words": "^0.18.0",
     "react-redux": "^8.0.5",
-    "react-router-dom": "^6.6.2",
-    "sass": "^1.57.1"
+    "react-router-dom": "^6.6.2"
   }
 }
