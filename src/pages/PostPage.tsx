@@ -24,7 +24,12 @@ export const PostPage = () => {
     return (
       <Box>
         <Container>
-          <Box display="flex" alignItems="center" justifyContent="center" minHeight="100vh">
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            minHeight="100vh"
+          >
             <CircularProgress />
           </Box>
         </Container>
@@ -49,8 +54,8 @@ export const PostPage = () => {
         <Paper
           elevation={0}
           sx={{
-            border:'1px solid #EAEAEA',
-            boxShadow:'0px 8px 24px rgba(0, 0, 0, 0.05)',
+            border: "1px solid #EAEAEA",
+            boxShadow: "0px 8px 24px rgba(0, 0, 0, 0.05)",
             padding: "35px 75px",
             position: "relative",
             marginTop: "135px",
@@ -64,10 +69,7 @@ export const PostPage = () => {
             <Typography variant="subtitle1">
               Description: {post?.description}
             </Typography>
-            <Typography
-              sx={{ height: "100vh" }}
-              variant="subtitle1"
-            >
+            <Typography sx={{ height: "100vh" }} variant="subtitle1">
               Snippet: {post?.snippet}
             </Typography>
           </Stack>

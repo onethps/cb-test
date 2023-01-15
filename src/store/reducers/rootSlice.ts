@@ -1,8 +1,7 @@
-import { combineReducers } from '@reduxjs/toolkit';
+import { combineReducers } from "@reduxjs/toolkit";
 
-import { postReducer } from './postSlice/postSlice';
-import { postsReducer } from './postsSlice/postsSlice';
-
+import { postReducer } from "./postSlice/postSlice";
+import { postsReducer } from "./postsSlice/postsSlice";
 
 const rootSlice = combineReducers({
   posts: postsReducer,

@@ -1,16 +1,16 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 
-import { postsAPI } from '../../../api/postsAPI';
+import { postsAPI } from "../../../api/postsAPI";
 
-import { IPost } from './types';
+import { IPost } from "./types";
 
-import { IPostsReducerState } from './types';
+import { IPostsReducerState } from "./types";
 
 export const fetchPosts = createAsyncThunk<
   IPost[],
   { search: string },
   { rejectValue: string }
->('posts/fetchPostsData', async ({ search }) => {
+>("posts/fetchPostsData", async ({ search }) => {
   try {
     const response = await postsAPI.getPosts(search);
     return response.data.data;
@@ -25,7 +25,7 @@ const initialState = {
 } as IPostsReducerState;
 
 const { reducer, actions } = createSlice({
-  name: 'postsSlice',
+  name: "postsSlice",
   initialState,
   reducers: {},
   extraReducers(builder) {

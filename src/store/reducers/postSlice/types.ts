@@ -1,6 +1,6 @@
-import { IPost } from '../postsSlice/types';
+import { IPost } from "../postsSlice/types";
 
 export interface IPostReducerState {
-post: Omit<IPost, 'uuid'> | null
-isLoading:boolean
+  post: Omit<IPost, "uuid"> | null;
+  isLoading: boolean;
 }

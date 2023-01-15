@@ -27,7 +27,9 @@ export const HomePage = () => {
     <Box paddingY="50px">
       <Container maxWidth={false} sx={{ maxWidth: "1338px" }}>
         <Stack gap="10px" marginBottom="40px">
-          <Typography fontWeight="600" variant="body2">Filter by keywords</Typography>
+          <Typography fontWeight="600" variant="body2">
+            Filter by keywords
+          </Typography>
           <SearchInput
             value={searchValue}
             onChange={handleChange}
@@ -42,7 +44,9 @@ export const HomePage = () => {
         ) : (
           <>
             <Stack marginBottom="40px">
-              <Typography fontWeight="600" variant="body2">Results: {posts.length}</Typography>
+              <Typography fontWeight="600" variant="body2">
+                Results: {posts.length}
+              </Typography>
               <Divider light />
             </Stack>
             <Stack direction="row" flexWrap="wrap" gap="45px">
