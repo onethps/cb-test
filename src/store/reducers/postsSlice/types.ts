@@ -9,4 +9,5 @@ export interface IPost {
     description: string
     image_url:string
     published_at:string
+    snippet:string
 }

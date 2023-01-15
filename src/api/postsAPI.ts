@@ -13,7 +13,7 @@ export const postsAPI = {
     });
   },
   getPostById(uuid:string) {
-    return axios.get(`https://api.thenewsapi.com/v1/news/uuid/${uuid}/api_token=${process.env.REACT_APP_NEWS_KEY}`, {
+    return axios.get(`https://api.thenewsapi.com/v1/news/uuid/${uuid}?api_token=${process.env.REACT_APP_NEWS_KEY}`, {
     });
   },
 };

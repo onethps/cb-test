@@ -4,10 +4,12 @@ import { Provider } from "react-redux";
 
 import { CssBaseline } from "@mui/material";
 
+import { RouterProvider } from "react-router-dom";
+
 import reportWebVitals from "./reportWebVitals";
 
-import App from "./App";
 import { store } from "./store/store";
+import { routes } from "./_app";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
@@ -16,7 +18,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <Provider store={store}>
     <CssBaseline />
-    <App />
+    <RouterProvider router={routes} />
   </Provider>,
 );
 
